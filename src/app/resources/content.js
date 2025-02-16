@@ -1,26 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Hammadullah",
+  lastName: "Nasir",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Full Stack Developer",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
-};
-
-const newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: (
-    <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
-    </>
-  ),
+  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Pashto", "Arabic"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const social = [
@@ -29,22 +18,17 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/18hnasir?tab=repositories",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
+    link: "https://www.linkedin.com/in/hammadullah-nasir-b9b416142/",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "",
   },
 ];
 
@@ -52,11 +36,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Full Stack Developer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Hammadullah, a full stack developer at <InlineCode>GridIronIT</InlineCode> where I work on developing applications using 
+      <br /> AWS services. After hours, I build my own projects.
     </>
   ),
 };
@@ -73,17 +57,31 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
-    link: "https://cal.com",
+    display: false,
+    link: "",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Hello, and welcome! My journey began in the small city of Danville, Virginia, 
+        where I was born and raised. My passion for technology sparked early when I got 
+        my first taste of programming through C++. That initial exposure laid the foundation 
+        for my decision to pursue a Bachelor of Science in Computer Science at 
+        George Mason University, where I honed my skills in areas such as algorithms, 
+        software development, databases, and networking.Upon graduation, I began my career 
+        as a software developer at CGI Federal, where I gained invaluable experience working 
+        on enterprise-level applications. From there, I joined Brightspot, where I expanded 
+        my technical knowledge and explored new development methodologies. Currently, I am 
+        working at GridIron IT as a full-stack developer, focusing on building dynamic, 
+        cloud-based applications powered by AWS services.Throughout my career, I’ve cultivated
+        a passion for solving complex problems and creating innovative solutions that enhance 
+        user experiences. I’m driven by continuous learning and the ever-evolving world of 
+        technology, and I’m excited about the future opportunities this field holds.
+        Outside of work, I enjoy staying active, exploring new technologies, and sharing my 
+        experiences with others in the tech community. Thanks for visiting, and feel free to 
+        reach out if you'd like to connect!
       </>
     ),
   },
@@ -92,41 +90,140 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "GridIronIT",
+        timeframe: "2023 - Present",
+        role: "Full Stack Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Worked with team of engineers to develop 4 backend services using TypeScript and AWS microservices such as
+            Lambda, API Gateway, SQS, and Step Functions.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Automated 3 daily tasks reducing manual effort by 90% including a python script for gathering new user data,
+            sending emails to subscribers, and processing xml documents.
+          </>,
+          <>
+             Created PostgreSQL procedures in our database to handle expiring searches and downloads.
+          </>,
+          <>
+            Led the redesign of our OpenSearch API payload to handle more complex queries leading to a 20% increase in
+            accurate results.
+          </>,
+          <>
+            Implemented 7 front end features integrating with our REST APIs as defined by the product team with Angular
+            and TypeScript.
+          </>,
+          <>
+            Diagnosed and fixed over 100 critical software bugs to resolve issues and maintain a 95% SLA for response and
+            resolution times.
+          </>,
+          <>
+            Worked with devops team to configure SAM templates automating setup of CI/CD pipelines integrating with
+            Jenkins and AWS CloudFormation
+            .
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "BrightSpot",
+        timeframe: "2022 - 2023",
+        role: "Software Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Collaborated with a cross-functional team to develop and maintain a content management system (CMS) product
+            for clients such as Google, Johnson & Johnson, and NVIDIA.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Updated client websites by creating various new front end features with React improving the website’s
+            functionality and 15% jump in user engagement metrics.
+          </>,
+          <>
+            Developed an image recognition API in python that generates image labels helping publishers in creating relevant
+            image captions reducing manual workload by 60%.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "CGI Federal",
+        timeframe: "2020 - 2022",
+        role: "Software Developer",
+        achievements: [
+          <>
+            Worked with team of developers to create a web application with Angular that reduced 70% of form complexity
+            for passive users.
+          </>,
+          <>
+            ● Modernized reporting system using PowerApps and Power BI providing client with real time data visualization
+            and improved data accuracy.
+          </>,
+          <>
+            Followed Agile methodologies by participating in daily stand up, sprint planning, and retrospective
+            meetings using JIRA for tracking tickets and backlog refinement.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "George Mason University",
+        timeframe: "2019 - 2020",
+        role: "Enrollment Technology Intern",
+        achievements: [
+          <>
+            Provided administrative and tech support to the Integrated Enrollment Marketing
+            Department at Merten Hall.
+          </>,
+          <>
+            Worked with HTML and Google Analytics to complete project reports as well 
+            as analyze traffic to webpages.
+          </>,
+          <>
+            Developed a Python script to extract and transform data
+            from CSV files, streamlining office and administrative workflows.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "STEM ExCEL",
+        timeframe: "2019 - 2019",
+        role: "Instructor/Tutor",
+        achievements: [
+          <>
+            Instructor for kids in STEM related fields such as Computer Science and Game Design.
+          </>,
+          <>
+            Collaborate with other instructors to review data and develop instructional strategies to address student
+            learning objectives.
+          </>,
+          <>
+            Provide clear, informative teaching sessions on Python to classes of 20 students.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Dicks Sporting Goods",
+        timeframe: "2018 - 2019",
+        role: "Cashier",
+        achievements: [
+          <>
+            Developed a lot of patience handling customers and making sure their needs at checkout were met.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Institute for Advanced Learning and Research",
+        timeframe: "2017 - 2017",
+        role: "Research Intern",
+        achievements: [
+          <>
+            Worked alongside Biologist Dr. Lowman and a team of students on the Farmbot.
+          </>,
+          <>
+            Farmbot: An open source precision agriculture farming machine, assembled and programmed.
           </>,
         ],
         images: [],
@@ -138,61 +235,64 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "George Mason University",
+        description: <>Graduated from George Mason University with a Bachelor of Science 
+        in Computer Science. The rigorous program provided a comprehensive foundation in 
+        both theoretical and practical aspects of computing. Coursework included algorithms 
+        and data structures, low-level programming, operating systems, networking, software
+        development, databases, comparative programming languages, and computer architectures.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Academy for Engineering and Technology ",
+        description: <>Graduated as the salutatorian of the Academy for Engineering and 
+        Technology (AET) dual enrollment program, earning college credits through Danville 
+        Community College. The two-year engineering curriculum emphasized theory, design, 
+        and hands-on experiential learning, providing a strong foundation in engineering 
+        principles and problem-solving skills.</>,
       },
+      {
+        name: "Galileo Magnet High School",
+        description: <>Attended Galileo Magnet High School, a National Blue Ribbon School, 
+        where I excelled both academically and athletically. Served as BETA Club President 
+        and earned 3rd place in the speech competition at the 2017 state BETA Convention.
+        Recognized as the Best Academic Athlete during my freshman and sophomore years, 
+        I also received the prestigious William & Mary Leadership Award. In addition to 
+        academics, I was a dedicated member of the varsity cross country and varsity 
+        soccer teams, showcasing leadership and teamwork on and off the field.</>,
+      }
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills and Certifications",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Programming Languages",
+        description: <>NodeJS, Typescript/Javascript, Python, Java, SQL.</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Frameworks",
+        description: <>AWS SAM (Serverless Application Model), Angular, React, Next.js, Express.</>,
+        images: [],
+      },
+      {
+        title: "Databases",
+        description: <>PostgreSQL, DynamoDB, MongoDB, ElasticSearch/OpenSearch.</>,
+        images: [],
+      },
+      {
+        title: "Softwares/Tools",
+        description: <>AWS (lambda, api gateway, step functions, eventbridge, sqs, cloudformation, cloudwatch, etc.), Git/GitHub/GitLab, Jenkis, PgAdmin, Atlassian, Docker, Windows, Linux, MAC.</>,
+        images: [],
+      },
+      {
+        title: "Certifications",
+        description: <>AWS Developer Associate, AWS Cloud Practitioner.</>,
+        images: [],
       },
     ],
   },
-};
-
-const blog = {
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work = {
@@ -203,83 +303,4 @@ const work = {
   // All projects will be listed on the /home and /work routes
 };
 
-const gallery = {
-  label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
-  images: [
-    {
-      src: "/images/gallery/img-01.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-  ],
-};
-
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, home, about, work };
