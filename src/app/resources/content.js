@@ -95,33 +95,29 @@ const about = {
         role: "Full Stack Developer",
         achievements: [
           <>
-            Worked with team of engineers to develop 4 backend services using TypeScript and AWS microservices such as
-            Lambda, API Gateway, SQS, and Step Functions.
+            Developed and deployed backend APIs using TypeScript and AWS microservices to modernize the Treasury’s financial crimes search application, improving search performance and scalability.
           </>,
           <>
-            Automated 3 daily tasks reducing manual effort by 90% including a python script for gathering new user data,
-            sending emails to subscribers, and processing xml documents.
+            Refactored downloads API into an event driven asynchronous service using AWS Lambda, SQS, and DynamoDB allowing users to continue using the application while downloads are processed in the background.
           </>,
           <>
-             Created PostgreSQL procedures in our database to handle expiring searches and downloads.
+            Led the redesign of our OpenSearch API payloads to support complex queries, enhancing the accuracy of search results by 20% and enabling investigators to uncover fraudulent activities more effectively.
           </>,
           <>
-            Led the redesign of our OpenSearch API payload to handle more complex queries leading to a 20% increase in
-            accurate results.
+            Automated 3 high effort manual processes, including user data collection, subscriber email notifications, and XML document processing, saving the Treasury analysts over 10 hours per week.
           </>,
           <>
-            Implemented 7 front end features integrating with our REST APIs as defined by the product team with Angular
-            and TypeScript.
+            Implemented 7 frontend features in Angular and TypeScript, integrating seamlessly with our REST APIs to enhance user experience for financial crime analysts.
           </>,
           <>
-            Diagnosed and fixed over 100 critical software bugs to resolve issues and maintain a 95% SLA for response and
-            resolution times.
+            Developed Python scripts using Gen AI to extract 1M+ missing payloads from CloudWatch logs after an outage, and automated their reingestion via AWS Lambda, EventBridge, and S3 to restore audit trail integrity for user activities.
           </>,
           <>
-            Worked with devops team to configure SAM templates automating setup of CI/CD pipelines integrating with
-            Jenkins and AWS CloudFormation
-            .
+            Resolved 100+ critical software bugs, improving system stability and maintaining a 95% SLA compliance for response and resolution times, ensuring uninterrupted access for Treasury investigators.
           </>,
+          <>
+            Created PostgreSQL procedures in our database to handle expiring searches and downloads.
+          </>
         ],
         images: [],
       },
@@ -135,13 +131,14 @@ const about = {
             for clients such as Google, Johnson & Johnson, and NVIDIA.
           </>,
           <>
-            Updated client websites by creating various new front end features with React improving the website’s
-            functionality and 15% jump in user engagement metrics.
+            Built image recognition API using Python, AWS Lambda, and Rekognition to automatically generate image labels, helping publishers create relevant captions and reducing manual workload by 60%.
           </>,
           <>
-            Developed an image recognition API in python that generates image labels helping publishers in creating relevant
-            image captions reducing manual workload by 60%.
+            Updated client websites by creating various new front end features with React improving the website’s functionality and 15% jump in user engagement metrics.
           </>,
+          <>
+            Leveraged Docker to run local instances of the CMS for feature development and debugging reducing environment related bugs and speeding up testing cycles.
+          </>
         ],
         images: [],
       },
@@ -155,7 +152,10 @@ const about = {
             for passive users.
           </>,
           <>
-            ● Modernized reporting system using PowerApps and Power BI providing client with real time data visualization
+            Developed a serverless backend using Node JS, AWS Lambda and API Gateway to perform CRUD operations on a PostgreSQL database increasing application scalability and reducing overhead by 30%.
+          </>,
+          <>
+            Modernized reporting system using PowerApps and Power BI providing client with real time data visualization
             and improved data accuracy.
           </>,
           <>
