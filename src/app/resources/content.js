@@ -131,6 +131,9 @@ const about = {
             for clients such as Google, Johnson & Johnson, and NVIDIA.
           </>,
           <>
+            Developed a serverless backend using Node JS, AWS Lambda and API Gateway to perform CRUD operations on a PostgreSQL database increasing application scalability and reducing overhead by 30%.
+          </>,
+          <>
             Built image recognition API using Python, AWS Lambda, and Rekognition to automatically generate image labels, helping publishers create relevant captions and reducing manual workload by 60%.
           </>,
           <>
@@ -150,9 +153,6 @@ const about = {
           <>
             Worked with team of developers to create a web application with Angular that reduced 70% of form complexity
             for passive users.
-          </>,
-          <>
-            Developed a serverless backend using Node JS, AWS Lambda and API Gateway to perform CRUD operations on a PostgreSQL database increasing application scalability and reducing overhead by 30%.
           </>,
           <>
             Modernized reporting system using PowerApps and Power BI providing client with real time data visualization
